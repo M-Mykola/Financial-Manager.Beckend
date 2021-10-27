@@ -1,8 +1,9 @@
 require("dotenv").config();
-const router = require("./router");
+
 const express = require("express");
 const app = express();
 const mongooseConnection = require("./Db/mongoDb");
+const router = require("./router");
 const cors = require("cors");
 
 app.use(
