@@ -16,7 +16,8 @@ app.use(router);
 app.use(cors());
 
 mongooseConnection();
+const port = process.env.PORT || 3200;
 
-app.listen(process.env.PORT, function () {
+app.listen(port, function () {
   console.log(`Server run in Port : ${process.env.PORT}`);
 });
